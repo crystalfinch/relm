@@ -1,0 +1,5 @@
+export const EDIT_LISTING = "EDIT_LISTING";
+export const ADD_LISTING = "ADD_LISTING";
+export const REMOVE_LISTING = "REMOVE_LISTING";
+export const REMOVE_ALL_LISTINGS = "REMOVE_ALL_LISTINGS";
+export const EDIT_PROFILE = "EDIT_PROFILE";

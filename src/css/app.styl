@@ -1,0 +1,337 @@
+/* Fonts
+----------------------------- */
+
+/* Roboto Regular */
+@font-face
+    font-family 'robotoregular'
+    src url('../fonts/roboto-regular-webfont.eot')
+    src url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg')
+    font-weight normal
+    font-style normal
+
+/* Roboto Italic */
+@font-face
+    font-family 'robotoitalic'
+    src url('../fonts/roboto-italic-webfont.eot')
+    src url('../fonts/roboto-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-italic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-italic-webfont.woff') format('woff'),
+         url('../fonts/roboto-italic-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-italic-webfont.svg#robotoitalic') format('svg')
+    font-weight normal
+    font-style normal
+
+/* Roboto Bold */
+@font-face
+    font-family 'robotobold'
+    src url('../fonts/roboto-bold-webfont.eot')
+    src url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg')
+    font-weight normal
+    font-style normal
+
+/* Roboto Light */
+@font-face
+    font-family 'robotolight'
+    src url('../fonts/roboto-light-webfont.eot')
+    src url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff'),
+         url('../fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-light-webfont.svg#robotolight') format('svg')
+    font-weight normal
+    font-style normal
+
+fontsRegular = 'robotoregular', Helvetica, Arial, sans-serif
+fontsLight = 'robotolight', Helvetica, Arial, sans-serif
+fontsBold = 'robotobold', Helvetica, Arial, sans-serif
+fontsRegularItalic = 'robotoitalic', Helvetica, Arial, sans-serif
+
+/* General
+----------------------------- */
+
+body
+    color #333
+    background-color #fff
+    line-height 1.4em
+    font-family fontsRegular
+    font-size 16px
+    position relative
+    -webkit-font-smoothing antialiased
+
+a
+    color #2b8ce0
+
+h1
+h2
+h3
+h4
+    margin-top 0
+
+table
+    display table
+    margin 20px 0 40px
+    th
+        font-family 'robotoregular', Helvetica, Arial, sans-serif
+        letter-spacing .02em
+    td
+        color #444
+        font-family 'robotoregular', Helvetica, Arial, sans-serif
+    .table-price
+        text-align right
+    .table-buttons
+        text-align right
+        width 5em
+        .btn
+            + .btn
+                margin-left 3px
+
+form
+    legend
+        font-size 1.4em
+        line-height 1.8em
+    .form-control
+        border-color #ededed
+        box-shadow none
+
+hr
+    border-top 1px solid #ddd
+    clear both
+
+.btn
+    font-family fontsLight
+    font-weight 300
+    &:focus
+        box-shadow none
+        outline none!important
+    + .btn
+        margin-left 5px
+    &.btn-default
+        background-color #eee
+        border-color #eee
+        box-shadow none
+        color #777
+        &:hover
+            background-color #ddd
+            border-color #ddd
+    &.btn-secondary
+        background-color #444
+        border-color #444
+        box-shadow none
+        color #fff
+        &:hover
+            background-color #333
+            border-color #333
+    &.btn-xs
+        line-height 1.4em
+        padding 0.2em .75em 0.3em
+
+.btn-group
+    .btn
+        &:focus
+            color #777
+        &.active
+            background-color #ddd
+            border-color #ddd
+            &:hover,
+            &:focus
+                color #777
+
+.container
+    max-width 1000px
+
+.wrap
+    padding-top 2.5em
+
+#header
+    background-color #252525
+    color #fff
+    a
+        color #fff
+        &:hover,
+        &:focus
+            text-decoration none
+    h1
+        display inline-block
+        font-family fontsBold
+        margin 0
+        a
+            display inline-block
+            padding .3em 0
+    nav
+        ul
+            margin 0
+            padding 0
+            position relative
+            li
+                a
+                    &.current
+                        color #999
+                        &:hover
+                            cursor default
+        >ul
+            >li
+                padding 0
+                >a
+                    display inline-block
+                    padding 1.25em .75em 1.2em
+                >span
+                    display inline-block
+                    padding 1.25em 0 1.2em .75em
+                    &:hover
+                        cursor default
+                    &.fa
+                        position relative
+                        left .5em
+                &:hover
+                    >ul
+                        display block!important
+                >ul
+                    >li
+                        + li
+                            border-top 1px solid #222
+                        a
+                            display block
+                            padding .5em 1.25em
+                            &:hover
+                                background-color #444
+                        &:first-child
+                            a
+                                padding-bottom .75em
+            ul
+                background-color #333
+                -webkit-box-shadow 0 2px 8px rgba(0,0,0,0.5)
+                -moz-box-shadow 0 2px 8px rgba(0,0,0,0.5)
+                box-shadow 0 2px 8px rgba(0,0,0,0.5)
+                display none
+                list-style none
+                position absolute
+                right 0
+                width 10em
+                z-index 1
+
+#main
+    .printBtn
+        margin-top .75em
+
+#login,
+#signUp
+    padding-top 4em
+    padding-bottom 3em
+    .well
+        padding 2em
+    h1
+        font-family fontsBold
+        margin-bottom .5em
+        text-align center
+    .btn
+        display block
+        font-family fontsBold
+        width 100%
+
+.content
+    h1
+        font-size 2.4em
+        letter-spacing -.02em
+        margin-bottom .5em
+        .small
+            color #333
+
+.agent
+    margin-top .5em
+    margin-bottom 2em
+    .avatar
+        text-align center
+        padding-right 0
+    .fa
+        color #999
+        font-size 2.5em
+    h2
+        font-size 1.5em
+        margin-bottom .25em
+    h3
+        font-size .9em
+    .buttons
+        margin-top .5em
+        margin-bottom .5em
+
+.recent
+    margin-bottom 2em
+    h2
+        font-size 1.25em
+        letter-spacing -.02em
+        margin-bottom .35em
+    p
+        color #999
+        font-family fontsRegularItalic
+        line-height 1.2em
+
+.cta-buttons
+    margin-top .5em
+    .btn
+        background-color #333
+        border-color #333
+        color #fff
+        padding 1em
+        + .btn
+            margin-left .5em
+        .fa
+            color #fff
+            display block
+            font-size 1.6em
+            padding .5em 0
+        &:hover
+            background-color #222
+            border-color #222
+        &:focus
+            color #fff
+
+.badge
+    border-radius 4px
+    padding .25em .5em .3em
+    &.badge--available
+        background-color #6ea96e
+    &.badge--pending
+        background-color #d0ba50
+    &.badge--sold
+        background-color #999
+
+.well
+    border-color transparent
+    border-radius 3px
+    -webkit-box-shadow none
+    box-shadow none
+
+.toast
+    background green
+    border-radius 10px
+    color #fff
+    padding 1em 1.4em
+    position fixed
+    right 50px
+    top 100px
+
+#footer
+    padding 2em
+    min-height 200px
+    p
+        color #777
+        font-family fontsLight
+        font-size .7em
+    .btn
+        position relative
+        top -.2em
+
+@media print
+    #header,
+    .btn,
+    a:after,
+    aside
+        display none

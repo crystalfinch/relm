@@ -1,0 +1,359 @@
+/* Fonts
+----------------------------- */
+/* Roboto Regular */
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/roboto-regular-webfont.woff2") format('woff2'), url("../fonts/roboto-regular-webfont.woff") format('woff'), url("../fonts/roboto-regular-webfont.ttf") format('truetype'), url("../fonts/roboto-regular-webfont.svg#robotoregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Roboto Italic */
+@font-face {
+  font-family: 'robotoitalic';
+  src: url("../fonts/roboto-italic-webfont.eot");
+  src: url("../fonts/roboto-italic-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/roboto-italic-webfont.woff2") format('woff2'), url("../fonts/roboto-italic-webfont.woff") format('woff'), url("../fonts/roboto-italic-webfont.ttf") format('truetype'), url("../fonts/roboto-italic-webfont.svg#robotoitalic") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Roboto Bold */
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/roboto-bold-webfont.eot");
+  src: url("../fonts/roboto-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/roboto-bold-webfont.woff2") format('woff2'), url("../fonts/roboto-bold-webfont.woff") format('woff'), url("../fonts/roboto-bold-webfont.ttf") format('truetype'), url("../fonts/roboto-bold-webfont.svg#robotobold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Roboto Light */
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/roboto-light-webfont.woff2") format('woff2'), url("../fonts/roboto-light-webfont.woff") format('woff'), url("../fonts/roboto-light-webfont.ttf") format('truetype'), url("../fonts/roboto-light-webfont.svg#robotolight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* General
+----------------------------- */
+body {
+  color: #333;
+  background-color: #fff;
+  line-height: 1.4em;
+  font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #2b8ce0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+table {
+  display: table;
+  margin: 20px 0 40px;
+}
+table th {
+  font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.02em;
+}
+table td {
+  color: #444;
+  font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+}
+table .table-price {
+  text-align: right;
+}
+table .table-buttons {
+  text-align: right;
+  width: 5em;
+}
+table .table-buttons .btn + .btn {
+  margin-left: 3px;
+}
+form legend {
+  font-size: 1.4em;
+  line-height: 1.8em;
+}
+form .form-control {
+  border-color: #ededed;
+  box-shadow: none;
+}
+hr {
+  border-top: 1px solid #ddd;
+  clear: both;
+}
+.btn {
+  font-family: 'robotolight', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+.btn:focus {
+  box-shadow: none;
+  outline: none !important;
+}
+.btn + .btn {
+  margin-left: 5px;
+}
+.btn.btn-default {
+  background-color: #eee;
+  border-color: #eee;
+  box-shadow: none;
+  color: #777;
+}
+.btn.btn-default:hover {
+  background-color: #ddd;
+  border-color: #ddd;
+}
+.btn.btn-secondary {
+  background-color: #444;
+  border-color: #444;
+  box-shadow: none;
+  color: #fff;
+}
+.btn.btn-secondary:hover {
+  background-color: #333;
+  border-color: #333;
+}
+.btn.btn-xs {
+  line-height: 1.4em;
+  padding: 0.2em 0.75em 0.3em;
+}
+.btn-group .btn:focus {
+  color: #777;
+}
+.btn-group .btn.active {
+  background-color: #ddd;
+  border-color: #ddd;
+}
+.btn-group .btn.active:hover,
+.btn-group .btn.active:focus {
+  color: #777;
+}
+.container {
+  max-width: 1000px;
+}
+.wrap {
+  padding-top: 2.5em;
+}
+#header {
+  background-color: #252525;
+  color: #fff;
+}
+#header a {
+  color: #fff;
+}
+#header a:hover,
+#header a:focus {
+  text-decoration: none;
+}
+#header h1 {
+  display: inline-block;
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+#header h1 a {
+  display: inline-block;
+  padding: 0.3em 0;
+}
+#header nav ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#header nav ul li a.current {
+  color: #999;
+}
+#header nav ul li a.current:hover {
+  cursor: default;
+}
+#header nav >ul >li {
+  padding: 0;
+}
+#header nav >ul >li >a {
+  display: inline-block;
+  padding: 1.25em 0.75em 1.2em;
+}
+#header nav >ul >li >span {
+  display: inline-block;
+  padding: 1.25em 0 1.2em 0.75em;
+}
+#header nav >ul >li >span:hover {
+  cursor: default;
+}
+#header nav >ul >li >span.fa {
+  position: relative;
+  left: 0.5em;
+}
+#header nav >ul >li:hover >ul {
+  display: block !important;
+}
+#header nav >ul >li >ul >li + li {
+  border-top: 1px solid #222;
+}
+#header nav >ul >li >ul >li a {
+  display: block;
+  padding: 0.5em 1.25em;
+}
+#header nav >ul >li >ul >li a:hover {
+  background-color: #444;
+}
+#header nav >ul >li >ul >li:first-child a {
+  padding-bottom: 0.75em;
+}
+#header nav >ul ul {
+  background-color: #333;
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  display: none;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  width: 10em;
+  z-index: 1;
+}
+#main .printBtn {
+  margin-top: 0.75em;
+}
+#login,
+#signUp {
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
+#login .well,
+#signUp .well {
+  padding: 2em;
+}
+#login h1,
+#signUp h1 {
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+#login .btn,
+#signUp .btn {
+  display: block;
+  font-family: 'robotobold', Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+.content h1 {
+  font-size: 2.4em;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5em;
+}
+.content h1 .small {
+  color: #333;
+}
+.agent {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+.agent .avatar {
+  text-align: center;
+  padding-right: 0;
+}
+.agent .fa {
+  color: #999;
+  font-size: 2.5em;
+}
+.agent h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+}
+.agent h3 {
+  font-size: 0.9em;
+}
+.agent .buttons {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.recent {
+  margin-bottom: 2em;
+}
+.recent h2 {
+  font-size: 1.25em;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35em;
+}
+.recent p {
+  color: #999;
+  font-family: 'robotoitalic', Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+}
+.cta-buttons {
+  margin-top: 0.5em;
+}
+.cta-buttons .btn {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+  padding: 1em;
+}
+.cta-buttons .btn + .btn {
+  margin-left: 0.5em;
+}
+.cta-buttons .btn .fa {
+  color: #fff;
+  display: block;
+  font-size: 1.6em;
+  padding: 0.5em 0;
+}
+.cta-buttons .btn:hover {
+  background-color: #222;
+  border-color: #222;
+}
+.cta-buttons .btn:focus {
+  color: #fff;
+}
+.badge {
+  border-radius: 4px;
+  padding: 0.25em 0.5em 0.3em;
+}
+.badge.badge--available {
+  background-color: #6ea96e;
+}
+.badge.badge--pending {
+  background-color: #d0ba50;
+}
+.badge.badge--sold {
+  background-color: #999;
+}
+.well {
+  border-color: transparent;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.toast {
+  background: #008000;
+  border-radius: 10px;
+  color: #fff;
+  padding: 1em 1.4em;
+  position: fixed;
+  right: 50px;
+  top: 100px;
+}
+#footer {
+  padding: 2em;
+  min-height: 200px;
+}
+#footer p {
+  color: #777;
+  font-family: 'robotolight', Helvetica, Arial, sans-serif;
+  font-size: 0.7em;
+}
+#footer .btn {
+  position: relative;
+  top: -0.2em;
+}
+@media print {
+  #header,
+  .btn,
+  a:after,
+  aside {
+    display: none;
+  }
+}
