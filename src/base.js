@@ -1,9 +1,9 @@
 import Rebase from 're-base';
 
 const base = Rebase.createClass({
-    apiKey: "AIzaSyAVA8Dx9N0NCCNPm1DEurk82dVdNkKDZYE",
-    authDomain: "relm-e828a.firebaseapp.com",
-    databaseURL: "https://relm-e828a.firebaseio.com"
+  apiKey: process.ENV.BASE_APIKEY,
+  authDomain: process.ENV.BASE_DOMAIN,
+  databaseURL: process.ENV.BASE_DB
 });
 
 export default base;

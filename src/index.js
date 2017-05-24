@@ -24,22 +24,22 @@ import NotFound from './components/NotFound';
 const store = createStore(rootReducer);
 
 const Root = () => {
-	return (
-		<Provider store={store}>
-	        <Router history={browserHistory}>
-				<Route component={App}>
-		            <Route path="/" component={Main} />
-					<Route path="/login" component={Login} />
-					<Route path="/dashboard" component={Dashboard} />
-					<Route path="/profile" component={Profile} />
-					<Route path="/detail" component={Detail} />
-					<Route path="/add-listing" component={AddListing} />
-					<Route path="/edit-listing" component={EditListing} />
-		            <Route path="*" component={NotFound} />
-				</Route>
-	        </Router>
-		</Provider>
-	);
+  return (
+    <Provider store={store}>
+      <Router history={browserHistory}>
+        <Route component={App}>
+          <Route path="/" component={Main} />
+          <Route path="/login" component={Login} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/detail" component={Detail} />
+          <Route path="/add-listing" component={AddListing} />
+          <Route path="/edit-listing" component={EditListing} />
+          <Route path="*" component={NotFound} />
+        </Route>
+      </Router>
+    </Provider>
+  );
 }
 
 ReactDOM.render(<Root/>, document.querySelector('#root'));

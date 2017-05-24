@@ -12,7 +12,6 @@
     "chartjs": "^0.3.24",
     "dompurify": "^0.8.5",
     "react": "^15.4.2",
-    "react-chartjs-2": "^2.0.5",
     "react-dom": "^15.4.2",
     "react-fontawesome": "^1.5.0",
     "react-redux": "^5.0.1",
